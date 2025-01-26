@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main-page">
+      <div id="left-side">
+         <div>
+            <h1>I'm Jaweria</h1>
+            <h4>"Frontend Developer | Bringing Designs to Life"</h4>
+
+            <div class="buttons">
+               <button class="first" onclick="scrollToSection('AboutMe')">About me</button>
+               <button class="second" onclick="scrollToSection('second-page')">Let's Visit</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="right-side">
+         <img src="/Images/portfolio.png" alt="">
+      </div>
+   </div>
+
+   <div id="second-page">
+      <img src="/Images/working.jpg" alt="">
+      <div class="Info">
+         <h1>Mastering the Art of Frontend Development</h1>
+         <h5>"I specialize in transforming Figma designs into fully responsive, pixel-perfect websites. With expertise in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, and Node.js, I bring creativity and functionality together. My goal is to craft seamless, user-friendly interfaces that not only look great but perform flawlessly across devices."</h5>
+         <div>
+           <button class="first" onclick="scrollToSection('AboutMe')">Read More</button>
+           <button class="second" onclick="scrollToSection('Skills')">Skills</button>
+        </div>
+      </div>
+   </div>
+
+  <div id="AboutMe">
+      <h1>About me</h1>
+     <p>I specialize in building dynamic and responsive user interfaces with HTML, CSS, and JavaScript. My expertise extends to TypeScript, ensuring type-safe and scalable code. I am proficient in Figma, translating design concepts into clean, functional web applications. Currently, I’m honing my skills in Next.js and Tailwind CSS, creating seamless and visually appealing web experiences with a strong focus on performance and modern design principles.</p>
+  </div>
+
+  <div id="Skills">
+     <p> Good in</p> 
+     <div class="Images">
+       <img src="/Images/html.png" alt="">
+       <img src="/Images/css.png" alt="" style="margin-left: 30px;">
+       <img src="/Images/js.png" alt="" style="margin-left: 30px;">
+       <img src="/Images/ts.png" alt="" style="margin-left: 30px;">
+     </div>
+
+     <div class="nextImages" style="margin-top: 50px;">
+        <img src="/Images/tailwind.jfif" alt="">
+        <img src="/Images/nextjs.png" alt="" style="margin-left: 30px;">
+      </div>
+  </div>
+
+  <div id="contact">
+     <h1>Contact Me</h1> 
+     <h5>Feel free to connect with me or check out my work! I’m always open to collaborating on exciting projects or discussing opportunities.</h5>
+     <p>📫 Let's Connect:</p>
+     <a href="https://www.linkedin.com/in/jaweria-52840b2b4/"><p>LinkedIn</p></a>
+     <a href="https://github.com/Jaweriaawan"><p>GitHub</p></a>
+     <button onclick="scrollToSection('left-side')">Back</button>
+  </div>
+
+  <script>
+   // Smooth scrolling function
+   function scrollToSection(sectionId) {
+       document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+   }
+</script>
+</body>
+</html>
+
+
+
+
